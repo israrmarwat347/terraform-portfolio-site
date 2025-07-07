@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found - Muhammad Israr Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            color: #fff;
+            text-align: center;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 6em;
+            margin: 0;
+            animation: bounce 1.5s infinite alternate;
+        }
+
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-20px); }
+        }
+
+        p {
+            font-size: 1.2em;
+            max-width: 400px;
+            margin: 1em 0;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: underline;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ffe57f;
+        }
+    </style>
+</head>
+<body>
+    <h1>404</h1>
+    <p>Oops! The page you are looking for does not exist.</p>
+    <p><a href="index.html">Return to Home</a></p>
+</body>
+</html>
+

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Muhammad Israr - Portfolio</title>
+<style>
+  /* Reset & base */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #121212;
+    color: #eee;
+    line-height: 1.6;
+  }
+  a {
+    color: #61dafb;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Container */
+  .container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  /* Header */
+  header {
+    text-align: center;
+    margin-bottom: 3rem;
+    animation: fadeInDown 1s ease forwards;
+  }
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.2rem;
+  }
+  header p {
+    font-size: 1.2rem;
+    color: #bbb;
+  }
+
+  /* Projects Section */
+  section.projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  @media (min-width: 600px) {
+    section.projects {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .project-card {
+    background: #222;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(97, 218, 251, 0.3);
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+  }
+  .project-card:nth-child(1) { animation-delay: 0.2s; }
+  .project-card:nth-child(2) { animation-delay: 0.4s; }
+  .project-card:nth-child(3) { animation-delay: 0.6s; }
+  .project-card:nth-child(4) { animation-delay: 0.8s; }
+  .project-card:nth-child(5) { animation-delay: 1s; }
+
+  .project-card h3 {
+    margin-top: 0;
+    color: #61dafb;
+  }
+  .project-card p {
+    margin-bottom: 0;
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  /* Animations */
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>Muhammad Israr</h1>
+    <p>DevOps Engineer & Cloud Enthusiast | Docker | Terraform | AWS | Jenkins CI/CD | Ansible</p>
+  </header>
+
+  <section class="projects">
+    <div class="project-card">
+      <h3>Docker Containerization</h3>
+      <p>Created scalable microservices with Docker, enabling container orchestration and seamless environment consistency.</p>
+    </div>
+    <div class="project-card">
+      <h3>Terraform Infrastructure Automation</h3>
+      <p>Implemented Infrastructure as Code (IaC) using Terraform to provision and manage AWS resources reliably and repeatedly.</p>
+    </div>
+    <div class="project-card">
+      <h3>AWS Cloud Solutions</h3>
+      <p>Deployed secure, fault-tolerant AWS infrastructure with EC2, S3, Lambda, and CloudFormation.</p>
+    </div>
+    <div class="project-card">
+      <h3>Jenkins CI/CD Pipelines</h3>
+      <p>Designed automated CI/CD pipelines with Jenkins, enabling continuous integration, testing, and deployment.</p>
+    </div>
+    <div class="project-card">
+      <h3>Ansible Automation</h3>
+      <p>Developed Ansible playbooks for automated configuration management and application deployment across environments.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Muhammad Israr. All rights reserved.
+  </footer>
+</div>
+
+</body>
+</html>
+
